@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+<br>
+<br>
+<img alt="1984" class="book" src="{{url_for('static', filename='1984.png')}}"> 
+<div class="login-box1">
+    <div>
+        <div class="col-md-4 col-md-offset-4">
+            <form method=POST action="{{ url_for('login') }}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Password">
+                </div>
+                <br>
+                <button type="submit" class="btn">Log In</button>
+            </form>
+            <br>
+            <div class="center">
+                Don't have an account? <br><a href="{{ url_for('register') }}">Sign up here</a>.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

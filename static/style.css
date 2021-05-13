@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap');
+body {
+	margin: 0;
+	background: rgb(50, 50, 50);
+	font-family: 'Bitter', serif;
+	font-weight: 800;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+header {
+	background: #ffffff;
+}
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.logo {
+	max-width: 65vw;
+	float: fixed;
+}
+.ball {
+	max-width: 7vw;
+	float: fixed;
+}
+.book {
+	max-width: 12%;
+	float: fixed;
+	margin-left: 43.8vw;
+}
+.book2 {
+	max-width: 12%;
+	float: fixed;
+	margin-left: 43.8vw;
+	padding-top: 350px;
+}
+nav {
+	float: right;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+	position: relative;
+}
+nav a {
+	color: rgb(69, 69, 69);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+nav a:hover {
+	color: #000;
+}
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: rgb(255, 151, 59);
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 350ms;
+}
+nav a:hover::before {
+	width: 100%;
+}
+.softback {
+	background-color: rgb(255, 255, 255);
+	padding: 5px;
+	margin-left: 5%;
+	padding-top: 5%;
+	margin-right: 5%;
+}
+.hardback {
+	background-color: #ff913c;
+	padding: 50px;
+	margin-left: 5%;
+	padding-top: 5%;
+	margin-right: 5%;
+}
+p {
+	padding: 5px;
+	margin: 5px;
+	font-size: 30px;
+	font-family: 'Raleway';
+}
+h1 {
+	font-family: 'Abril Fatface';
+	text-align: center;
+	font-size: 30px;
+	padding: 5px;
+	margin: 5px;
+}
+h2 {
+	font-family: 'Raleway', sans-serif;
+	padding: 5px;
+	margin: 5px;
+	font-size: 20px;
+}
+h3 {
+	padding: 5px;
+	margin: 5px;
+	font-size: 10px;
+	font-family: 'Raleway';
+}
+h4 {
+	padding: 5px;
+	margin: 5px;
+	font-size: 20px;
+	font-family: 'Raleway';
+	text-align: center;
+}
+.frontpageimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20vw;
+}
+#centertext {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 85%;
+}
+
+.btn {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* background animated gradiant */
+
+:root {
+	--gradient: linear-gradient(90deg, rgb(255, 144, 74), #cf8f8f, #ddba88);
+}
+body {
+	background-size: 300%;
+	background-image: var(--gradient);
+	animation: bg-animation 25s infinite;
+}
+@keyframes bg-animation {
+	0% {
+		background-position: left
+	}
+	50% {
+		background-position: right
+	}
+	100% {
+		background-position: left
+	}
+}
+/* Fading animation */
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0, );
+	text-align: right;
+}
+/* table */
+
+.middle {
+	text-align: center;
+	margin: 50px;
+}
+/* form */
+
+.login-box {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, );
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .8);
+	border-radius: 10px;
+}
+.login-box1 {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, );
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .8);
+	border-radius: 10px;
+}
+.login-box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #ffffff;
+	text-align: center;
+}
+input {
+	position: fixed;
+	left: 30%;
+}
