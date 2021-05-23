@@ -2,6 +2,8 @@
 Milestone Project 3
 Python and Data Centric Develpment.
 
+Live site https://paperfolk.herokuapp.com/
+
 THE PAPER FOLK
 
 In this milestone project I am to create a book recommendation website that allows the end user to store their data or "tastes",
