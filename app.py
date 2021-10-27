@@ -2,7 +2,9 @@ from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
 import bcrypt
 
+from src.data import app
 
+print(app.username)
 app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb+srv://benji:Set12389.@paperfolk.bpas2.mongodb.net/Paperfolk'
 mongo = PyMongo(app)
